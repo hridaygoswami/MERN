@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Index from './MyComponents'
+import Index from './MyComponents/Index.jsx'
 import {
   createBrowserRouter,
   RouterProvider
