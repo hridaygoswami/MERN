@@ -20,7 +20,7 @@ function Index() {
   let [bg, setBg] = useState("red")
   let storeData = ()=>{
     console.log(fullName, email, message)
-    fetch("http://127.0.0.1:5000/store", {
+    fetch("http://127.0.0.1:3000/store", {
       method: "POST",
       crossDomain: true,
       headers: {
