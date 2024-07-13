@@ -17,10 +17,10 @@ function Index() {
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
   const [random, setRandom] = useState("")
-  let [bg, setBg] = useState("red")
+
   let storeData = ()=>{
     console.log(fullName, email, message)
-    fetch("http://127.0.0.1:3000/store", {
+    fetch("http://127.0.0.1:5001/store", {
       method: "POST",
       crossDomain: true,
       headers: {
@@ -37,10 +37,6 @@ function Index() {
   }
   return (
     <>
-      <input type="text" name="random" id="random" value={random} onChange={(e)=>{setRandom(e.target.value)}} />
-      <h1 style={{
-        backgroundColor: bg
-      }}>{(random>18)?bg = "green": bg="red"}</h1>
       <div className="container-page ">
 
         {/* <!-- Preloader --> */}
